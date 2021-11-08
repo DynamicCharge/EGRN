@@ -13,6 +13,7 @@
 
 * {
     font-family: 'Montserrat', sans-serif;
+    color: #000;
 }
 .logo {
     font-style: normal;
@@ -27,13 +28,21 @@
 .logo-red {
     color: #EE3F58;
 }
+.page__header {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+}
+.page__desc {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+}
 .container {
     width: 1170px;
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
 }
 
 .start-page {
@@ -47,7 +56,10 @@
     align-content: center;
 }
 .start-page .container {
-
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .start-page__list {
     display: flex;
@@ -66,9 +78,54 @@
     align-items: center;
     align-content: center;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 .start-page__list__item__link {
     font-size: 20px;
     text-decoration: none;
     color: white;
+}
+
+.nav {
+    width: 100%;
+    background-color: #fff;
+}
+.nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+.nav__list {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+.nav__list__item {
+
+}
+.nav__list__item:first-child {
+    margin-right: 45px;
+}
+.nav__list__item__link {
+    text-decoration: none;
+    color: #000;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+}
+.account {
+    color: #0065B1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.account::before {
+    content: '';
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-image: url('../img/account.svg');
+    margin-right: 10px;
 }
