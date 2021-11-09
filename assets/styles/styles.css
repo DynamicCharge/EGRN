@@ -16,8 +16,8 @@
     color: #000;
 }
 .logo {
+    font-family: MontserratBold;
     font-style: normal;
-    font-weight: bold;
     font-size: 24px;
     line-height: 29px;
     text-decoration: none;
@@ -160,7 +160,15 @@
     align-items: center;
 }
 .nav__list__item {
+    font-family: MontserratRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
 
+    /* identical to box height */
+
+    color: #000000;
 }
 .nav__list__item:first-child {
     margin-right: 45px;
@@ -212,7 +220,7 @@
 .header__wrapper {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: baseline;
     margin-bottom: 10px;
 }
 .header__wrapper__input {
@@ -246,6 +254,7 @@
 }
 .advansed-search {
     color: white;
+    white-space: nowrap;
 }
 .advansed-search::after {
     content: '';
@@ -262,6 +271,14 @@
     font-size: 12px;
     line-height: 15px;
     color: #F8FAFC;
+    margin-top: 10px;
+}
+.input__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+    flex-direction: column;
 }
 
 .functions {
@@ -328,6 +345,12 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+}
+.price__list__item__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
 }
 .price__list__item {
     display: flex;
@@ -517,7 +540,7 @@
 .footer .container {
     padding: 19px 0;
     display: flex;
-    justify-content: baseline;
+    justify-content: start;
     align-items: center;
     flex-direction: row;
 }

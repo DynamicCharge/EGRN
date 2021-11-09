@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/styles/reset.css">
     <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="assets/styles/media.css">
     <title>ЕГРН - Главная</title>
 </head>
 <body>
@@ -20,7 +21,8 @@
                         <a href="" class="nav__list__item__link">Онлайн реестр</a>
                     </li>
                     <li class="nav__list__item">
-                        <a href="" class="nav__list__item__link account">Личный кабинет</a>
+                        <a href="" class="nav__list__item__link nav__list__item__link__desktop account">Личный кабинет</a>
+                        <a href="" class="nav__list__item__link__mobile"><img src="assets/img/account.svg" alt=""></a>
                     </li>
                 </ul>
             </div>
@@ -31,11 +33,13 @@
             <h1 class="main-header page__header1">Получение выписок из ЕГРН, ЕГРП, кадастрового паспорта и Росреестра</h1>
             <p class="main-desc">Для получения открытых данных введите адрес объекта или его кадастровый номер</p>
             <div class="header__wrapper">
-                <input type="text" class="header__wrapper__input" placeholder="Введите адрес или кадастровый номер">
+                <div class="input__wrapper">
+                    <input type="text" class="header__wrapper__input" placeholder="Введите адрес или кадастровый номер">
+                    <span class="header__examle">Пример заполнения — 77:08:0009005:1596 или Москва бульвар Кавказский дом 52 стр.5</span>
+                </div>
                 <buttop class="header__wrapper__btn button-text">Найти</buttop>
                 <a href='#' class="advansed-search page__link1">Расширенный поиск</a>
             </div>
-            <span class="header__examle">Пример заполнения — 77:08:0009005:1596 или Москва бульвар Кавказский дом 52 стр.5</span>
         </div>
     </header>
 
@@ -76,52 +80,80 @@
             <div class="price__wrapper">
                 <ul class="price__list">
                     <li class="price__list__item">
+                        <div class="price__list__item__container">
                         <h3 class="price__list__item__cost page__header2">250 ₽</h3>
                         <span class="price__list__item__count page__desc1">За одну выписку</span>
+                        </div>
+                        <div class="price__list__item__container">
                         <span class="price__list__item__count page__desc1">При заказе от</span>
                         <h3 class="price__list__item__quantity page__header2">1 шт.</h3>
+                        </div>
                     </li>
 
                     <li class="price__list__item">
-                        <h3 class="price__list__item__cost page__header2">200 ₽</h3>
-                        <span class="price__list__item__count page__desc1">За одну выписку</span>
-                        <span class="price__list__item__count page__desc1">При заказе от</span>
-                        <h3 class="price__list__item__quantity page__header2">2 шт.</h3>
+                        <div class="price__list__item__container">
+                            <h3 class="price__list__item__cost page__header2">200 ₽</h3>
+                            <span class="price__list__item__count page__desc1">За одну выписку</span>
+                        </div>
+                        <div class="price__list__item__container">
+                            <span class="price__list__item__count page__desc1">При заказе от</span>
+                            <h3 class="price__list__item__quantity page__header2">2 шт.</h3>
+                        </div>
                     </li>
 
                     <li class="price__list__item">
-                        <h3 class="price__list__item__cost page__header2">175 ₽</h3>
-                        <span class="price__list__item__count page__desc1">За одну выписку</span>
-                        <span class="price__list__item__count page__desc1">При заказе от</span>
-                        <h3 class="price__list__item__quantity page__header2">5 шт.</h3>
+                        <div class="price__list__item__container">
+                            <h3 class="price__list__item__cost page__header2">175 ₽</h3>
+                            <span class="price__list__item__count page__desc1">За одну выписку</span>
+                        </div>
+                        <div class="price__list__item__container">
+                            <span class="price__list__item__count page__desc1">При заказе от</span>
+                            <h3 class="price__list__item__quantity page__header2">5 шт.</h3>
+                        </div>
                     </li>
 
                     <li class="price__list__item">
-                        <h3 class="price__list__item__cost page__header2">150 ₽</h3>
-                        <span class="price__list__item__count page__desc1">За одну выписку</span>
-                        <span class="price__list__item__count page__desc1">При заказе от</span>
-                        <h3 class="price__list__item__quantity page__header2">10 шт.</h3>
+                        <div class="price__list__item__container">
+                            <h3 class="price__list__item__cost page__header2">150 ₽</h3>
+                            <span class="price__list__item__count page__desc1">За одну выписку</span>
+                        </div>
+                        <div class="price__list__item__container">
+                            <span class="price__list__item__count page__desc1">При заказе от</span>
+                            <h3 class="price__list__item__quantity page__header2">10 шт.</h3>
+                        </div>
                     </li>
 
                     <li class="price__list__item">
-                        <h3 class="price__list__item__cost page__header2">125 ₽</h3>
+                        <div class="price__list__item__container">
+                            <h3 class="price__list__item__cost page__header2">125 ₽</h3>
                         <span class="price__list__item__count page__desc1">За одну выписку</span>
-                        <span class="price__list__item__count page__desc1">При заказе от</span>
-                        <h3 class="price__list__item__quantity page__header2">30 шт.</h3>
+                        </div>
+                        <div class="price__list__item__container">
+                            <span class="price__list__item__count page__desc1">При заказе от</span>
+                            <h3 class="price__list__item__quantity page__header2">30 шт.</h3>
+                        </div>
                     </li>
 
                     <li class="price__list__item">
-                        <h3 class="price__list__item__cost page__header2">100 ₽</h3>
-                        <span class="price__list__item__count page__desc1">За одну выписку</span>
-                        <span class="price__list__item__count page__desc1">При заказе от</span>
-                        <h3 class="price__list__item__quantity page__header2">50 шт.</h3>
+                        <div class="price__list__item__container">
+                            <h3 class="price__list__item__cost page__header2">100 ₽</h3>
+                            <span class="price__list__item__count page__desc1">За одну выписку</span>
+                        </div>
+                        <div class="price__list__item__container">
+                            <span class="price__list__item__count page__desc1">При заказе от</span>
+                            <h3 class="price__list__item__quantity page__header2">50 шт.</h3>
+                        </div>
                     </li>
 
                     <li class="price__list__item">
-                        <h3 class="price__list__item__cost page__header2">75 ₽</h3>
-                        <span class="price__list__item__count page__desc1">За одну выписку</span>
-                        <span class="price__list__item__count page__desc1">При заказе от</span>
-                        <h3 class="price__list__item__quantity page__header2">100 шт.</h3>
+                        <div class="price__list__item__container">
+                            <h3 class="price__list__item__cost page__header2">75 ₽</h3>
+                            <span class="price__list__item__count page__desc1">За одну выписку</span>
+                        </div>
+                        <div class="price__list__item__container">
+                            <span class="price__list__item__count page__desc1">При заказе от</span>
+                            <h3 class="price__list__item__quantity page__header2">100 шт.</h3>
+                        </div>
                     </li>
                 </ul>
                 <form action="" class="price__form">
