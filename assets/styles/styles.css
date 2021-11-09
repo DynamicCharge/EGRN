@@ -510,3 +510,28 @@
     margin-right: 55px;
     margin-bottom: 80px;
 }
+
+.footer {
+    background: #0065B1;
+}
+.footer .container {
+    padding: 19px 0;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    flex-direction: row;
+}
+.footer__item {
+    font-family: MontserratRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+.copy {
+    margin-right: 366px;
+}
+.agreement {
+    text-decoration: none;
+}
