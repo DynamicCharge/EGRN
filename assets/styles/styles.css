@@ -265,7 +265,7 @@
 }
 
 .functions {
-    background-color: #F8FAFC;
+    
 }
 .functions .container {
     display: flex;
@@ -305,4 +305,102 @@
 .functions__item__link {
     color: #0065B1;
     text-decoration: none;
+}
+
+.price {
+    background: #F8FAFC;
+}
+.price .container {
+    padding: 70px 0 50px;
+}
+.price__header {
+    margin-bottom: 40px;
+}
+.price__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.price__list {
+    width: 685px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.price__list__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+    padding: 16px 30px;
+    margin-bottom: 9px;
+}
+.price__list__item__cost {
+    color: rgba(238, 63, 88, 1);
+}
+.price__list__item__count {
+
+}
+.price__list__item__quantity {
+
+}
+.price__form {
+    max-width: 445px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    padding: 50px 68px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form__header {
+    margin-bottom: 20px;
+}
+.form__desc {
+    margin-bottom: 30px;
+}
+.form__input {
+    width: 100%;
+    border: 1px solid #D7D7D7;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+    padding: 16px 20px 17px;
+    margin-bottom: 15px;
+}
+.form__input:last-child {
+    margin-bottom: 25px;
+}
+.form__btn {
+    width: 100%;
+    box-sizing: border-box;
+    background: #0065B1;
+    border-radius: 5px;
+    padding: 18px 0 17px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+.form__registration {
+
+}
+.form__registration__link {
+    font-family: MontserratBold;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 15px;
+
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #0065B1;
 }
