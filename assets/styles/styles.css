@@ -263,3 +263,46 @@
     line-height: 15px;
     color: #F8FAFC;
 }
+
+.functions {
+    background-color: #F8FAFC;
+}
+.functions .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 77px 0 75px;
+}
+.functions__item {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    padding: 25px 30px;
+    max-width: 270px;
+    box-sizing: border-box;
+}
+.functions__item:first-child {
+    max-width: 570px;
+}
+.functions__item__img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+.functions__item__header {
+    margin-bottom: 15px;
+}
+.functions__item__desc {
+    margin-bottom: 15px;
+}
+.funstions__item__instructions {
+    font-family: MontserratRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+.functions__item__link {
+    color: #0065B1;
+    text-decoration: none;
+}
