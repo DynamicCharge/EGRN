@@ -1,0 +1,122 @@
+@media(max-width: 1200px) {
+    .container {
+        width: 95%;
+    }
+    .header .container {
+
+    }
+    .header__wrapper {
+        flex-direction: column;
+    }
+    .header__wrapper__input {
+        margin-right: 0;
+        width: 100%;
+    }
+    .input__wrapper {
+        margin-bottom: 28px;
+    }
+    .header__wrapper__btn {
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .advansed-search {
+        margin: 0 auto;
+    }
+
+    .functions .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .functions__item {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .functions__item:first-child {
+        max-width: 100%;
+    }
+    .price__wrapper {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .price__list {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .price__list__item {
+        margin-bottom: 20px;
+    }
+    .price__form {
+        max-width: 100%;
+        width: 100%;
+    }
+    .example__wrapper__item {
+        margin-right: 20px;
+    }
+    .about__wrapper {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .about__item {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer .container {
+        flex-direction: column;
+    }
+    .copy {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    .nav__list__item__link__desktop {
+        display: none;
+    }
+    .nav__list__item__link__mobile {
+        display: block;
+    }
+    .nav__list__item:first-child {
+        margin-right: 25px;
+    }
+}
+
+@media(max-width: 620px) {
+    .payment__wrapper {
+
+    }
+    .payment__wrapper__item__img {
+        width: 25vw;
+    }
+    .payment__wrapper__item {
+        margin-right: 0vw;
+        margin-bottom: 10vw;
+    }
+    .page__header1 {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .price__list__item__container {
+        width: 100%;
+    }
+    .price__list__item__container:first-child {
+        flex-direction: row-reverse;
+        margin-bottom: 10px;
+    }
+    .price__list__item {
+        flex-direction: column;
+    }
+}
+@media(max-width: 510px) {
+    .price__list__item {
+        flex-wrap: wrap;
+    }
+    .price__form {
+        padding: 50px 20px;
+    }
+}

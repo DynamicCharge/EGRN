@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="assets/styles/reset.css">
     <link rel="stylesheet" href="assets/styles/styles.css">
     <link rel="stylesheet" href="assets/styles/media.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <title>ЕГРН - Главная</title>
 </head>
 <body>
         <nav class="nav">
-            <div class="container">
-                <a href="" class="logo">
+            <egrn-main-nav></egrn-main-nav>
+            <!-- <div class="container">
+                <a href="index.html" class="logo">
                     <span class="logo-blue">ЕГРН</span><span class="logo-red">ЕГРН</span>
                 </a>
 
@@ -25,7 +27,7 @@
                         <a href="" class="nav__list__item__link__mobile"><img src="assets/img/account.svg" alt=""></a>
                     </li>
                 </ul>
-            </div>
+            </div> -->
         </nav>
     <main class="main">
     <header class="header">
@@ -34,7 +36,7 @@
             <p class="main-desc">Для получения открытых данных введите адрес объекта или его кадастровый номер</p>
             <div class="header__wrapper">
                 <div class="input__wrapper">
-                    <input type="text" class="header__wrapper__input" placeholder="Введите адрес или кадастровый номер">
+                    <input type="text" class=" header__wrapper__input" placeholder="Введите адрес или кадастровый номер">
                     <span class="header__examle">Пример заполнения — 77:08:0009005:1596 или Москва бульвар Кавказский дом 52 стр.5</span>
                 </div>
                 <buttop class="header__wrapper__btn button-text">Найти</buttop>
@@ -285,13 +287,17 @@
             </div>
         </div>
     </section>
+</main>
 
     <footer class="footer">
-        <div class="container">
+        <egrn-footer></egrn-footer>
+        <!-- <div class="container">
             <span class="copy footer__item">2021 RA-Studio</span>
             <a href="#" class="agreement footer__item">Пользовательское соглашение</span>
-        </div>
+        </div> -->
     </footer>
-</main>
+
+    <script src="assets/js/src/navbar.js"></script>
+    <script src="assets/js/src/footer.js"></script>
 </body>
 </html>

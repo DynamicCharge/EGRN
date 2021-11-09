@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/reset.css">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="assets/styles/media.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>ЕГРН - Онлайн реестр</title>
+</head>
+<body>
+    <nav class="nav other-nav">
+        <egrn-other-nav></egrn-other-nav>
+    </nav>
+
+    <main class="online-registry">
+        <div class="container">
+            <h2 class="online-registry__header page__header2">Выписки ЕГРН для недвижимости по всей России</h2>
+            <div class="header__wrapper search__wrapper">
+                <div class="input__wrapper">
+                    <input type="text" class="search__wrapper__input header__wrapper__input" placeholder="Введите адрес или кадастровый номер">
+                    <span class="header__examle search__examle">Пример заполнения — 77:08:0009005:1596 или Москва бульвар Кавказский дом 52 стр.5</span>
+                </div>
+                <buttop class="search__wrapper__btn header__wrapper__btn button-text">Найти</buttop>
+                <a href='#' class="search__advansed advansed-search page__link1">Расширенный поиск</a>
+            </div>
+            <div class="online-registry__shortcuts__wrapper">
+                <span class="online-registry__shortcuts__wrapper__item page__link1">Москва</span>
+                <span class="online-registry__shortcuts__wrapper__item page__link1">Санкт-Петербург</span>
+            </div>
+            <div class="online-registry__area__wrapper">
+                <div class="online-registry__area__wrapper__item" v-for='areas in areaNamesArray' :key='areas.liter'>
+                    <h3 class="online-registry__area__wrapper__item__lit">{{areas.liter}}</h3>
+                    <ul class="online-registry__area__wrapper__item__list">
+                        <li class="online-registry__area__wrapper__item__list__item"  v-for='index in areas.array'><a href="" class="online-registry__area__wrapper__item__list__item__link">{{index}}</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <egrn-footer></egrn-footer>
+    </footer>
+
+    <script src="assets/js/src/navbar.js"></script>
+    <script src="assets/js/src/registry-search.js"></script>
+    <script src="assets/js/src/footer.js"></script>
+</body>
+</html>
