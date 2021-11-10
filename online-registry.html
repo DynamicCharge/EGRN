@@ -20,21 +20,20 @@
             <h2 class="online-registry__header page__header2">Выписки ЕГРН для недвижимости по всей России</h2>
             <div class="header__wrapper search__wrapper">
                 <div class="input__wrapper">
-                    <input type="text" class="search__wrapper__input header__wrapper__input" placeholder="Введите адрес или кадастровый номер">
+                    <input v-model="input" type="text" class="search__wrapper__input header__wrapper__input" placeholder="Введите адрес или кадастровый номер">
                     <span class="header__examle search__examle">Пример заполнения — 77:08:0009005:1596 или Москва бульвар Кавказский дом 52 стр.5</span>
                 </div>
-                <buttop class="search__wrapper__btn header__wrapper__btn button-text">Найти</buttop>
+                <button v-on:click="goSearch()" class="search__wrapper__btn header__wrapper__btn button-text">Найти</button>
                 <a href='#' class="search__advansed advansed-search page__link1">Расширенный поиск</a>
             </div>
             <div class="online-registry__shortcuts__wrapper">
-                <span class="online-registry__shortcuts__wrapper__item page__link1">Москва</span>
-                <span class="online-registry__shortcuts__wrapper__item page__link1">Санкт-Петербург</span>
+                <span v-for="item in shortcuts" :key="item" v-on:click="input = item" class="online-registry__shortcuts__wrapper__item page__link1">{{item}}</span>
             </div>
             <div class="online-registry__area__wrapper">
-                <div class="online-registry__area__wrapper__item" v-for='areas in areaNamesArray' :key='areas.liter'>
+                <div class="online-registry__area__wrapper__item" v-for='areas in filteredAreas' :key='areas.liter'>
                     <h3 class="online-registry__area__wrapper__item__lit">{{areas.liter}}</h3>
                     <ul class="online-registry__area__wrapper__item__list">
-                        <li class="online-registry__area__wrapper__item__list__item"  v-for='index in areas.array'><a href="" class="online-registry__area__wrapper__item__list__item__link">{{index}}</a></li>
+                        <li class="online-registry__area__wrapper__item__list__item"  v-for='area in areas.array'><a href="" class="online-registry__area__wrapper__item__list__item__link">{{area}}</a></li>
                     </ul>
                 </div>
             </div>

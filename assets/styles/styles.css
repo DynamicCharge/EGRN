@@ -15,6 +15,16 @@
     font-family: 'MontserratRegular', sans-serif;
     color: #000;
 }
+body {
+    margin: 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex-grow: 1;
+}
 .logo {
     font-family: MontserratBold;
     font-style: normal;
@@ -544,6 +554,7 @@
 
 .footer {
     background: #0065B1;
+    flex-shrink: 0;
 }
 .footer .container {
     padding: 19px 0;
@@ -616,12 +627,16 @@
 }
 .online-registry__shortcuts__wrapper {
     margin: 60px 0 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 230px;
 }
 .online-registry__shortcuts__wrapper__item {
     display: inline-block;
-}
-.online-registry__shortcuts__wrapper__item:first-child {
+    cursor: pointer;
     margin-right: 43px;
+    white-space: nowrap;
 }
 .online-registry__shortcuts__wrapper__item:after {
     content: '';
@@ -637,6 +652,8 @@
     align-items: baseline;
     flex-wrap: wrap;
     flex-direction: column;
+    max-height: 120vh;
+    /* width: 100%; */
 }
 .online-registry__area__wrapper__item {
     margin-bottom: 40px;

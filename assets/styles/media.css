@@ -84,6 +84,10 @@
     .nav__list__item:first-child {
         margin-right: 25px;
     }
+
+    .online-registry__area__wrapper {
+        max-height: unset;
+    }
 }
 
 @media(max-width: 620px) {
