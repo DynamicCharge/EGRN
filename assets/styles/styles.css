@@ -802,9 +802,9 @@ main {
     white-space: nowrap;
 }
 
-.locality .container {
+.district .container {
     padding: 80px 0 120px;
 }
-.locality__area__wrapper {
+.district__area__wrapper {
     max-height: 70vh;
 }
