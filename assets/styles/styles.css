@@ -808,3 +808,8 @@ main {
 .district__area__wrapper {
     max-height: 70vh;
 }
+
+.locality__area__wrapper {
+    max-height: 30vh;
+
+}
