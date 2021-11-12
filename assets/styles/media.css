@@ -115,6 +115,15 @@
     .price__list__item {
         flex-direction: column;
     }
+    .region__districts__wrapper__list {
+        max-height: none;
+        min-width: 0;
+        width: auto;
+    }
+    .region__cities__wrapper__list {
+        max-height: none;
+        min-width: 0;
+    }
 }
 @media(max-width: 510px) {
     .price__list__item {
@@ -122,5 +131,8 @@
     }
     .price__form {
         padding: 50px 20px;
+    }
+    .region__wrapper__list {
+        width: 100%;
     }
 }
