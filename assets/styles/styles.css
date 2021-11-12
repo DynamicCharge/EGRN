@@ -811,5 +811,8 @@ main {
 
 .locality__area__wrapper {
     max-height: 30vh;
+}
 
+.street__districts__wrapper__list {
+    max-height: 115px
 }
