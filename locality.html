@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/reset.css">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="assets/styles/media.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>ЕГРН - Населенный пункт</title>
+</head>
+<body>
+    <nav class="nav other-nav">
+        <egrn-other-nav></egrn-other-nav>
+    </nav>
+    
+    <main class="locality">
+        <div class="container">
+            <h2 class="region__header page__header2">Выписки ЕГРН для недвижимости по всей России</h2>
+            <div class="header__wrapper search__wrapper">
+                <div class="input__wrapper">
+                    <input v-model="input" type="text" class="search__wrapper__input header__wrapper__input" placeholder="Введите адрес или кадастровый номер">
+                    <span class="header__examle search__examle">Пример заполнения — 77:08:0009005:1596 или Москва бульвар Кавказский дом 52 стр.5</span>
+                </div>
+                <button v-on:click="goSearch()" class="search__wrapper__btn header__wrapper__btn button-text">Найти</button>
+                <a href='#' class="search__advansed advansed-search page__link1">Расширенный поиск</a>
+            </div>
+
+            <div class="region__breadcrumps__wrapper">
+                <a href="#" class="region__breadcrumps__wrapper__item page__desc2">Россия</a>
+                <a href="#" class="region__breadcrumps__wrapper__item page__desc2">Алтай</a>
+                <a href="#" class="region__breadcrumps__wrapper__item page__desc2">Район Кош-Агачский</a>
+            </div>
+
+            <div class="region__wrapper">
+                <h3 class="region__wrapper__header page__header3">Район Кош-Агачский</h3>
+                <p class="region__wrapper__desc page__desc2">Чтобы заказать выписку из ЕГРН (бывший ЕГРП) для объектов недвижимости, введите необходимый адрес в поисковом поле выше или выберите ваш населенный пункт, район и адрес в списке ниже.</p>
+                <div class="region__wrapper__list">
+                    <div class="region__wrapper__list__headers">
+                            <span class="region__wrapper__list__header__item page__desc2">Адрес</span>
+                            <span class="region__wrapper__list__header__item page__desc2">Код ОКАТО</span>
+                            <span class="region__wrapper__list__header__item page__desc2">Код ОКТМО</span>
+                            <span class="region__wrapper__list__header__item page__desc2">Города</span>
+                            <span class="region__wrapper__list__header__item page__desc2">Населенные пункты</span>
+                    </div>
+                    <div class="region__wrapper__list__data">
+                        <span class="region__wrapper__list__data__item">Россия, Алтай, район Кош-Агачский</span>
+                        <span class="region__wrapper__list__data__item">84210000000</span>
+                        <span class="region__wrapper__list__data__item">84000000</span>
+                        <span class="region__wrapper__list__data__item">12</span>
+                        <span class="region__wrapper__list__data__item">18</span>
+                    </div>
+                </div>
+                <div class="region__districts__wrapper">
+                    <h4 class="region__districts__wrapper__header page__header4">Города в районе Кош-Агачский</h4>
+                    <ul class="region__districts__wrapper__list">
+                        <li class="region__districts__wrapper__list__item online-registry__area__wrapper__item__list__item"><a href="" class="region__districts__wrapper__list__link online-registry__area__wrapper__item__list__item__link">Кош-Агачанский район</a></li>
+                        <li class="region__districts__wrapper__list__item online-registry__area__wrapper__item__list__item"><a href="" class="region__districts__wrapper__list__link online-registry__area__wrapper__item__list__item__link">Майминский район</a></li>
+                        <li class="region__districts__wrapper__list__item online-registry__area__wrapper__item__list__item"><a href="" class="region__districts__wrapper__list__link online-registry__area__wrapper__item__list__item__link">Онгудайский район</a></li>
+                        <li class="region__districts__wrapper__list__item online-registry__area__wrapper__item__list__item"><a href="" class="region__districts__wrapper__list__link online-registry__area__wrapper__item__list__item__link">Турочакский район</a></li>
+                        <li class="region__districts__wrapper__list__item online-registry__area__wrapper__item__list__item"><a href="" class="region__districts__wrapper__list__link online-registry__area__wrapper__item__list__item__link">Улаганский район</a></li>
+                        <li class="region__districts__wrapper__list__item online-registry__area__wrapper__item__list__item"><a href="" class="region__districts__wrapper__list__link online-registry__area__wrapper__item__list__item__link">Усть-Канский район</a></li>
+                        <li class="region__districts__wrapper__list__item online-registry__area__wrapper__item__list__item"><a href="" class="region__districts__wrapper__list__link online-registry__area__wrapper__item__list__item__link">Усть-Коксинский район</a></li>
+                        <li class="region__districts__wrapper__list__item online-registry__area__wrapper__item__list__item"><a href="" class="region__districts__wrapper__list__link online-registry__area__wrapper__item__list__item__link">Чемальский район</a></li>
+                        <li class="region__districts__wrapper__list__item online-registry__area__wrapper__item__list__item"><a href="" class="region__districts__wrapper__list__link online-registry__area__wrapper__item__list__item__link">Чойский район</a></li>
+                        <li class="region__districts__wrapper__list__item online-registry__area__wrapper__item__list__item"><a href="" class="region__districts__wrapper__list__link online-registry__area__wrapper__item__list__item__link">Шебалинский район</a></li>
+                    </ul>
+                </div>
+                <div class="region__cities__wrapper">
+                    <h4 class="region__cities__wrapper__header page__header4">Населенные пункты в районе Кош-Агачский</h4>
+                    <div class="online-registry__area__wrapper locality__area__wrapper">
+                        <div class="online-registry__area__wrapper__item" v-for='areas in filteredAreas' :key='areas.liter'>
+                            <h3 class="online-registry__area__wrapper__item__lit">А</h3>
+                            <ul class="online-registry__area__wrapper__item__list">
+                                <li class="online-registry__area__wrapper__item__list__item"  v-for='area in areas.array'><a href="" class="online-registry__area__wrapper__item__list__item__link">Село Актал</a></li>
+                                <li class="online-registry__area__wrapper__item__list__item"  v-for='area in areas.array'><a href="" class="online-registry__area__wrapper__item__list__item__link">Село Акташ</a></li>
+                                <li class="online-registry__area__wrapper__item__list__item"  v-for='area in areas.array'><a href="" class="online-registry__area__wrapper__item__list__item__link">Село Аркыт</a></li>
+                            </ul>
+                        </div>
+                        <div class="online-registry__area__wrapper__item" v-for='areas in filteredAreas' :key='areas.liter'>
+                            <h3 class="online-registry__area__wrapper__item__lit">Б</h3>
+                            <ul class="online-registry__area__wrapper__item__list">
+                                <li class="online-registry__area__wrapper__item__list__item"  v-for='area in areas.array'><a href="" class="online-registry__area__wrapper__item__list__item__link">Село Бельтир</a></li>
+                                <li class="online-registry__area__wrapper__item__list__item"  v-for='area in areas.array'><a href="" class="online-registry__area__wrapper__item__list__item__link">Село Беляши</a></li>
+                            </ul>
+                        </div>
+                        <div class="online-registry__area__wrapper__item" v-for='areas in filteredAreas' :key='areas.liter'>
+                            <h3 class="online-registry__area__wrapper__item__lit">Д</h3>
+                            <ul class="online-registry__area__wrapper__item__list">
+                                <li class="online-registry__area__wrapper__item__list__item"  v-for='area in areas.array'><a href="" class="online-registry__area__wrapper__item__list__item__link">Село Джазатор</a></li>
+                            </ul>
+                        </div>
+                        <div class="online-registry__area__wrapper__item" v-for='areas in filteredAreas' :key='areas.liter'>
+                            <h3 class="online-registry__area__wrapper__item__lit">Ж</h3>
+                            <ul class="online-registry__area__wrapper__item__list">
+                                <li class="online-registry__area__wrapper__item__list__item"  v-for='area in areas.array'><a href="" class="online-registry__area__wrapper__item__list__item__link">Село Жана-Аул</a></li>
+                            </ul>
+                        </div>
+                        <div class="online-registry__area__wrapper__item" v-for='areas in filteredAreas' :key='areas.liter'>
+                            <h3 class="online-registry__area__wrapper__item__lit">К</h3>
+                            <ul class="online-registry__area__wrapper__item__list">
+                                <li class="online-registry__area__wrapper__item__list__item"  v-for='area in areas.array'><a href="" class="online-registry__area__wrapper__item__list__item__link">Кокоря</a></li>
+                                <li class="online-registry__area__wrapper__item__list__item"  v-for='area in areas.array'><a href="" class="online-registry__area__wrapper__item__list__item__link">Село Кош-Агач</a></li>
+                                <li class="online-registry__area__wrapper__item__list__item"  v-for='area in areas.array'><a href="" class="online-registry__area__wrapper__item__list__item__link">Село Курай</a></li>
+                                <li class="online-registry__area__wrapper__item__list__item"  v-for='area in areas.array'><a href="" class="online-registry__area__wrapper__item__list__item__link">Село Кызыл-Таш</a></li>
+                            </ul>
+                        </div>
+                        <div class="online-registry__area__wrapper__item" v-for='areas in filteredAreas' :key='areas.liter'>
+                            <h3 class="online-registry__area__wrapper__item__lit">М</h3>
+                            <ul class="online-registry__area__wrapper__item__list">
+                                <li class="online-registry__area__wrapper__item__list__item"  v-for='area in areas.array'><a href="" class="online-registry__area__wrapper__item__list__item__link">Село Мухор-Тархата</a></li>
+                            </ul>
+                        </div>
+                        <div class="online-registry__area__wrapper__item" v-for='areas in filteredAreas' :key='areas.liter'>
+                            <h3 class="online-registry__area__wrapper__item__lit">Н</h3>
+                            <ul class="online-registry__area__wrapper__item__list">
+                                <li class="online-registry__area__wrapper__item__list__item"  v-for='area in areas.array'><a href="" class="online-registry__area__wrapper__item__list__item__link">Село Новый Бельтир</a></li>
+                            </ul>
+                        </div>
+                        <div class="online-registry__area__wrapper__item" v-for='areas in filteredAreas' :key='areas.liter'>
+                            <h3 class="online-registry__area__wrapper__item__lit">О</h3>
+                            <ul class="online-registry__area__wrapper__item__list">
+                                <li class="online-registry__area__wrapper__item__list__item"  v-for='area in areas.array'><a href="" class="online-registry__area__wrapper__item__list__item__link">Село Ортолык</a></li>
+                            </ul>
+                        </div>
+                        <div class="online-registry__area__wrapper__item" v-for='areas in filteredAreas' :key='areas.liter'>
+                            <h3 class="online-registry__area__wrapper__item__lit">Т</h3>
+                            <ul class="online-registry__area__wrapper__item__list">
+                                <li class="online-registry__area__wrapper__item__list__item"  v-for='area in areas.array'><a href="" class="online-registry__area__wrapper__item__list__item__link">Село Ташанта</a></li>
+                                <li class="online-registry__area__wrapper__item__list__item"  v-for='area in areas.array'><a href="" class="online-registry__area__wrapper__item__list__item__link">Село Теленгит-Сортогой</a></li>
+                                <li class="online-registry__area__wrapper__item__list__item"  v-for='area in areas.array'><a href="" class="online-registry__area__wrapper__item__list__item__link">Село Тобелер</a></li>
+                            </ul>
+                        </div>
+                        <div class="online-registry__area__wrapper__item" v-for='areas in filteredAreas' :key='areas.liter'>
+                            <h3 class="online-registry__area__wrapper__item__lit">Ч</h3>
+                            <ul class="online-registry__area__wrapper__item__list">
+                                <li class="online-registry__area__wrapper__item__list__item"  v-for='area in areas.array'><a href="" class="online-registry__area__wrapper__item__list__item__link">Село Чаган-Узун</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <egrn-footer></egrn-footer>
+    </footer>
+
+    <script src="assets/js/src/navbar.js"></script>
+    <script src="assets/js/src/footer.js"></script>
+</body>
+</html>
