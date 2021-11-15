@@ -124,6 +124,16 @@
     .extract__req__wrapper__container {
         flex-direction: column-reverse;
     }
+    .account-page__wrapper {
+        flex-direction: column;
+    }
+    .account-page__data {
+        margin-bottom: 60px;
+    }
+    .account-page__history {
+        overflow-x: auto;
+        width: 100%;
+    }
 }
 
 @media(max-width: 620px) {

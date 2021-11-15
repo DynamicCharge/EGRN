@@ -116,7 +116,7 @@ main {
 .start-page {
     background-color: grey;
     width: 100vw;
-    height: 100vh;
+    height: max-content;
     color: white;
     display: flex;
     justify-content: center;
@@ -152,6 +152,8 @@ main {
     font-size: 20px;
     text-decoration: none;
     color: white;
+    width: 100%;
+    text-align: center;
 }
 
 .nav {
@@ -1024,4 +1026,110 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.account-page {
+
+}
+.account-page .container {
+    padding: 70px 0 138px;
+}
+.region__header {
+    margin-bottom: 45px;
+}
+.account-page__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.account-page__data {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 370px;
+}
+.account-page__data__desc {
+    margin-bottom: 15px;
+}
+.account-page__data__line {
+    margin-bottom: 15px;
+    border: 1px solid #D7D7D7;
+}
+.account-page__data__header {
+    margin-bottom: 10px;
+}
+.account-page__data__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.account-page__data__link {
+    text-decoration: none;
+    display: block;
+    margin-bottom: 15px;
+}
+.account-page__data__link.first {
+    color: #0065B1;
+
+}
+.account-page__data__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-direction: column;
+}
+.red {
+    color: #EE3F58;
+}
+.account-page__history {
+    max-width: 747px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.account-page__history__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.account-page__history__container:first-child {
+    margin-bottom: 57px;
+}
+.account-page__history__header {
+
+}
+.account-page__history__link {
+    text-decoration: none;
+    color: #0065B1;
+}
+.account-page__history__hedrow {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    /* identical to box height */
+
+    color: #000000;
+}
+.account-page__history__line {
+    width: 100%;
+    border: 1px solid #D7D7D7;
+    margin: 30px 0;
+}
+.account-page__history__container__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.account-page__history__container:last-child {
+    flex-direction: column;
+}
+.account-page__history__container__item__text {
+    min-width: 127px;
 }
