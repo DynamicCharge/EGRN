@@ -1032,7 +1032,7 @@ main {
 
 }
 .account-page .container {
-    padding: 70px 0 138px;
+    padding: 70px 0 80px;
 }
 .region__header {
     margin-bottom: 45px;
@@ -1132,4 +1132,82 @@ main {
 }
 .account-page__history__container__item__text {
     min-width: 127px;
+}
+.account-page__order {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-direction: column;
+    max-width: 750px;
+    width: 100%;
+}
+.account-page__order__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.account-page__order__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.account-page__order__header {
+    margin-right: 158px;
+}
+.account-page__order__status {
+    border: 1px solid #0065B1;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+
+    /* identical to box height */
+
+    /* BLUE */
+    color: #0065B1;
+    padding: 6px 25px;
+}
+.account-page__order__desc:first-child {
+    margin-right: 190px;
+}
+.account-page__order__line {
+    width: 100%;
+    border: 1px solid #D7D7D7;
+    margin: 0 0 30px;
+}
+.download {
+    margin-bottom: 35px;
+}
+.account-page__order__container__link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+
+    /* identical to box height */
+    text-transform: uppercase;
+
+    color: #000000;
+    margin-right: 60px;
+    text-decoration: none;
+}
+.account-page__order__container__link::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url('../img/download.svg');
+    margin-right: 10px;
+    display: inline-block;
+}
+.account-page__order__desc__instr {
+    margin-top: 36px;
+    text-decoration: none;
+}
+.bold {
+    font-weight: 600;
 }

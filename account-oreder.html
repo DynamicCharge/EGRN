@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/reset.css">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="assets/styles/media.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>ЕГРН - Личный кабинет заказ</title>
+</head>
+<body>
+    <nav class="nav other-nav">
+        <egrn-other-nav></egrn-other-nav>
+    </nav>
+    
+    <main class="account-page">
+        <div class="container">
+            <div class="region__breadcrumps__wrapper">
+                <a href="#" class="region__breadcrumps__wrapper__item page__desc2">Главная</a>
+                <a href="#" class="region__breadcrumps__wrapper__item page__desc2">Личный кабинет</a>
+            </div>
+            <h2 class="region__header page__header2">Личный кабинет</h2>
+            <div class="account-page__wrapper">
+                <div class="account-page__data">
+                    <p class="account-page__data__desc page__desc2">Вы вошли как</p>
+                    <hr class="account-page__data__line">
+                    <h4 class="account-page__data__header page__header4">Константинопольский Константин</h4>
+                    <p class="account-page__data__desc page__desc2">konstantinopolsky@mail.ru</p>
+                    <div class="account-page__data__container">
+                        <p class="account-page__data__desc page__desc2">Предоплаченых выписок: </p>
+                        <p class="account-page__data__desc page__desc2">1 500</p>
+                    </div>
+                    <hr class="account-page__data__line">
+                    <a href="" class="account-page__data__link first page__desc2">Последние заказы</a>
+                    <hr class="account-page__data__line">
+                    <a href="" class="account-page__data__link page__desc2">Все заказы</a>
+                    <hr class="account-page__data__line">
+                    <div class="account-page__data__container">
+                        <a href="" class="account-page__data__link page__desc2">Сменить пароль</a>
+                        <a href="" class="account-page__data__link red page__desc2">Выйти</a>
+                    </div>
+                </div>
+                <div class="account-page__order">
+                    <div class="account-page__order__wrapper">
+                        <div class="account-page__order__container">
+                            <h4 class="account-page__order__header page__header3">Заказ №1234567889</h4>
+                            <span class="account-page__order__status">Готов</span>
+                        </div>
+                        <p class="account-page__order__desc">Выписка из Единого государственного реестра прав на объект недвижимости об основных характеристиках и зарегистрированных правах</p>
+                    </div>
+                    <div class="account-page__order__wrapper">
+                        <div class="account-page__order__container">
+                            <h4 class="account-page__order__header page__header4">Кадастровый номер</h4>
+                            <h4 class="account-page__order__header page__header4">Адрес</h4>
+                            
+                        </div>
+                        <hr class="account-page__order__line">
+                        <div class="account-page__order__container">
+                            <h4 class="account-page__order__desc page__desc2">47:15:666666:125864</h4>
+                            <h4 class="account-page__order__desc page__desc2">Ленинградская область, г. Мурино, ул. Кооперативная, дом 20, литера Б</h4>
+                        </div>
+                    </div>
+                    <div class="account-page__order__wrapper">
+                        <h4 class="account-page__order__header download page__header3">Скачать выписку</h4>
+                        <div class="account-page__order__container">
+                            <a href="" class="account-page__order__container__link">ZIP с Эцп</a>
+                            <a href="" class="account-page__order__container__link">PDF</a>
+                            <a href="" class="account-page__order__container__link">html</a>
+                        </div>
+                        <p class="account-page__order__desc page__desc2">Документы предоставляются в электронном виде в автоматическом режиме, без рукописных подписей и печатей. Выписка из Росреестра в электронной форме, подписанная квалифицированной электронной подписью, признается электронным документом, равнозначным документу на бумажном носителе, подписанному собственноручной подписью.</p>
+                        <a href="#" class="account-page__order__desc__instr page__desc2">Иструкция <span class="bold">«Как проверить ЭЦП»</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <egrn-footer></egrn-footer>
+    </footer>
+
+    <script src="assets/js/src/navbar.js"></script>
+    <script src="assets/js/src/footer.js"></script>
+</body>
+</html>

@@ -134,6 +134,7 @@
         overflow-x: auto;
         width: 100%;
     }
+    
 }
 
 @media(max-width: 620px) {
@@ -169,6 +170,12 @@
     .region__cities__wrapper__list {
         max-height: none;
         min-width: 0;
+    }
+    .account-page__order__header {
+        margin-right: 80px;
+    }
+    .account-page__order__desc:first-child {
+        margin-right: 40px;
     }
 }
 @media(max-width: 510px) {
