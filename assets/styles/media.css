@@ -136,7 +136,27 @@
         overflow-y: hidden;
 
     }
-    
+    .example__wrapper {
+        overflow-x: auto;
+    }
+    .example .container {
+        padding: 70px 0 80px;
+    }
+    .about .container {
+        padding-bottom: 80px;
+    }
+    .price .container {
+        padding: 50px 0 40px;
+    }
+    .functions .container {
+        padding: 50px 0 40px;
+    }
+    .payment .container {
+        padding-bottom: 80px;
+    }
+    .district .container {
+        padding: 80px 0 30px;
+    }
 }
 
 @media(max-width: 620px) {

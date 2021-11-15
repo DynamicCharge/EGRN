@@ -216,6 +216,10 @@ main {
 
 .header {
     background: linear-gradient(101.21deg, #0477CE 0.33%, #149AFF 98.95%);
+    padding-top: 6px;
+}
+.header__line {
+    border: 1px solid #C4C4C4;
 }
 .header .container {
     padding: 120px 0 80px;
@@ -262,6 +266,12 @@ main {
 
     margin-right: 30px;
 }
+.header__wrapper__input::-webkit-input-placeholder {
+    color: #94CEFA;
+   } 
+.header__wrapper__input::-moz-placeholder {
+    color: #94CEFA;
+   }
 .header__wrapper__btn {
     padding: 17px 65px;
     box-sizing: border-box;
@@ -356,7 +366,6 @@ main {
 .price__wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
 }
 .price__list {
     width: 685px;
@@ -383,6 +392,9 @@ main {
     width: 100%;
     padding: 16px 30px;
     margin-bottom: 9px;
+}
+.price__list__item:last-child {
+    margin-bottom: 0;
 }
 .price__list__item__cost {
     color: rgba(238, 63, 88, 1);
@@ -426,7 +438,7 @@ main {
 .form__btn {
     width: 100%;
     box-sizing: border-box;
-    background: #0065B1;
+    background-color: #0065B1;
     border-radius: 5px;
     padding: 18px 0 17px;
     color: #fff;
@@ -659,6 +671,7 @@ main {
 }
 .online-registry__area__wrapper__item {
     margin-bottom: 40px;
+    margin-right: 10px;
 }
 .online-registry__area__wrapper__item__lit {
     font-family: MontserratRegular;
@@ -688,6 +701,14 @@ main {
 }
 .online-registry__area__wrapper__item__list__item__link {
     text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+
+    /* identical to box height */
+
+    color: #000000;
 }
 
 .region {
