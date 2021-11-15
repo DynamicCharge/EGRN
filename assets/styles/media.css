@@ -104,6 +104,26 @@
         flex-wrap: wrap;
         width: auto;
     }
+    .extract__req__container__form {
+        flex-direction: column;
+    }
+    .extract__req__wrapper {
+        width: 100%;
+        max-width: none;
+    }
+    .extract__req__wrapper:last-child {
+        margin-top: 38px;
+    }
+    #payment {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .extract__req__container__form__header {
+        margin-bottom: 5px;
+    }
+    .extract__req__wrapper__container {
+        flex-direction: column-reverse;
+    }
 }
 
 @media(max-width: 620px) {

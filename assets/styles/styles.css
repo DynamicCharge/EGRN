@@ -953,3 +953,75 @@ main {
 .extract__type__container__form__submit {
     margin-top: 70px;
 }
+.extract__req__container__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+.extract__req__wrapper {
+    max-width: 50%;
+}
+.extract__req__wrapper:last-child {
+    
+}
+.extract__req__container__form__header {
+    margin-bottom: 25px;
+}
+.extract__req__container__form__input {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+.extract__req__container__form__label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+}
+#payment {
+    background: #FFFFFF;
+    border: 1px solid #D7D7D7;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 16px 20px;
+
+    font-family: 'MontserratRegular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+
+    /* identical to box height */
+
+    /* Black */
+    color: #000000;
+    margin-bottom: 130px;
+    margin-top: 15px;
+}
+
+.go-to-payment {
+    margin-right: 0;
+}
+.go-back {
+    background: #FFFFFF;
+
+    /* BLUE */
+    border: 2px solid #0065B1;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #0065B1;
+}
+.extract__req__container__form__label__check__link {
+    color: #0065B1;
+    text-decoration: none;
+}
+.extract__req__wrapper__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
