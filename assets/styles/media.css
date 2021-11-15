@@ -130,9 +130,11 @@
     .account-page__data {
         margin-bottom: 60px;
     }
-    .account-page__history {
+    .account-page__history__table {
         overflow-x: auto;
         width: 100%;
+        overflow-y: hidden;
+
     }
     
 }
