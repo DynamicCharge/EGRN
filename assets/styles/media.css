@@ -88,6 +88,22 @@
     .online-registry__area__wrapper {
         max-height: unset;
     }
+    .extract__data__container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .extract__data__container__main-item, .extract__data__container__item {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 20px;
+    }
+    .extract__data__container__main-item__desc:first-child {
+        white-space: normal;
+    }
+    .extract__type__container__form__label {
+        flex-wrap: wrap;
+        width: auto;
+    }
 }
 
 @media(max-width: 620px) {
