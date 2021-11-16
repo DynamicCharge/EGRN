@@ -393,6 +393,12 @@ main {
     padding: 16px 30px;
     margin-bottom: 9px;
 }
+.type__form__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 30%;
+}
 .price__list__item:last-child {
     margin-bottom: 0;
 }
@@ -851,27 +857,34 @@ main {
 }
 
 .street__notes__wrapper {
-
+    
+}
+.street__notes__wrapper__wrap {
+    width: 100%;
+    overflow-x: auto;
 }
 .street__notes__wrapper__header {
     margin-bottom: 40px;
 }
 .street__notes__wrapper__list {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    width: max-content;
+    /* display: flex;
+    flex-direction: column; */
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 4fr;
     overflow-x: auto;
+    border-bottom: 1px solid #EEEEEE;
 }
-.street__notes__wrapper__list__item {
+.street__notes__wrapper__item__text {
     border-top: 1px solid #EEEEEE;
     padding: 10px 0;
-    white-space: nowrap;
 }
 .street__notes__wrapper__list__item:last-child {
     border-bottom: 1px solid #EEEEEE;
 }
-.street__notes__wrapper__item__text:first-child {
-    margin-right: 90px;
+.notes__header {
+    padding-right: 20px;
 }
 
 .extract {
@@ -910,6 +923,12 @@ main {
     align-items: center;
     width: 100%;
     padding: 10px 0;
+}
+.extract__data__container__main-item__wrapper__item > .extract__data__container__main-item__desc:first-child {
+    margin-right: 15px;
+}
+.extract__data__container__main-item__wrapper__item > .extract__data__container__main-item__desc:last-child {
+    word-wrap: normal;
 }
 .extract__data__container__main-item__wrapper__item:not(:last-child) {
     border-bottom: 1px solid #EEEEEE;
@@ -959,6 +978,11 @@ main {
     border-bottom: none;
 }
 .extract__type__container__form__label__check {
+    margin-right: 50px;
+}
+.temp {
+    display: flex;
+    justify-content: space-between;
 }
 .extract__type__container__form__label__wrapper {
 
@@ -1017,6 +1041,9 @@ main {
     line-height: 20px;
 }
 #payment {
+    width: 430px;
+    height: 50px;
+    box-sizing: border-box;
     background: #FFFFFF;
     border: 1px solid #D7D7D7;
     box-sizing: border-box;
@@ -1036,12 +1063,32 @@ main {
     margin-bottom: 130px;
     margin-top: 15px;
 }
+option {
+    /* font-family: 'MontserratRegular'; */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
 
+    /* identical to box height */
+
+    /* Grey 2 */
+    color: #8E8E8E;
+}
 .go-to-payment {
     margin-right: 0;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 17px 0;
 }
 .go-back {
     background: #FFFFFF;
+    text-decoration: none;
+    width: 200px;
+    text-align: center;
+    padding: 17px 0;
 
     /* BLUE */
     border: 2px solid #0065B1;
@@ -1220,7 +1267,7 @@ main {
     align-items: center;
     margin-bottom: 40px;
 }
-.downliads {
+.downloads {
     margin-bottom: 80px;
 }
 .account-page__order__header {

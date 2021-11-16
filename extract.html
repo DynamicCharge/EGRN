@@ -20,7 +20,7 @@
             <h2 class="region__header page__header2">Выписки ЕГРН для недвижимости по всей России</h2>
             <div class="header__wrapper search__wrapper">
                 <div class="input__wrapper">
-                    <input v-model="input" type="text" class="search__wrapper__input header__wrapper__input" placeholder="Введите адрес или кадастровый номер">
+                    <input v-model="input" type="text" class="search__wrapper__input header__wrapper__input main__input" placeholder="Введите адрес или кадастровый номер">
                     <span class="header__examle search__examle">Пример заполнения — 77:08:0009005:1596 или Москва бульвар Кавказский дом 52 стр.5</span>
                 </div>
                 <button v-on:click="goSearch()" class="search__wrapper__btn header__wrapper__btn button-text">Найти</button>
@@ -75,89 +75,131 @@
             </div>
             <div class="extract__type__container">
                 <form action="" class="extract__type__container__form">
+
                     <label  class="extract__type__container__form__label">
-                        <input type="checkbox" class="extract__type__container__form__label__check">
-                        <div class="extract__type__container__form__label__wrapper">
-                            <h4 class="extract__type__container__form__label__header page__header4">Срочная выписка об объекте</h4>
-                            <p class="extract__type__container__form__label__desc page__desc2">ФИО собственников помещения (если есть), кадастровая стоимость, наличие/отсутствие обременений/аренды/ипотеки</p>
+                        <div class="temp">
+                            <input type="checkbox" class="extract__type__container__form__label__check">
+                            <div class="extract__type__container__form__label__wrapper">
+                                <h4 class="extract__type__container__form__label__header page__header4">Срочная выписка об объекте</h4>
+                                <p class="extract__type__container__form__label__desc page__desc2">ФИО собственников помещения (если есть), кадастровая стоимость, наличие/отсутствие обременений/аренды/ипотеки</p>
+                            </div>
                         </div>
-                        <div class="extract__type__container__form__label__wrapper">
-                            <h4 class="extract__type__container__form__label__cost page__header4">990 руб</h4>
-                            <p class="extract__type__container__form__label__time">5-45 минут</p>
+                        
+                        <div class="type__form__wrapper">
+                            <div class="extract__type__container__form__label__wrapper item__cost">
+                                <h4 class="extract__type__container__form__label__cost page__header4">990 руб</h4>
+                                <p class="extract__type__container__form__label__time">5-45 минут</p>
+                            </div>
+                            <a href="#" class="extract__type__container__form__label__example">Образец</a>
                         </div>
-                        <a href="#" class="extract__type__container__form__label__example">Образец</a>
                     </label>
+
                     <label  class="extract__type__container__form__label">
-                        <input type="checkbox" class="extract__type__container__form__label__check">
-                        <div class="extract__type__container__form__label__wrapper">
-                            <h4 class="extract__type__container__form__label__header page__header4">Срочная выписка об объекте</h4>
-                            <p class="extract__type__container__form__label__desc page__desc2">ФИО собственников помещения (если есть), кадастровая стоимость, наличие/отсутствие обременений/аренды/ипотеки</p>
+                        <div class="temp">
+                            <input type="checkbox" class="extract__type__container__form__label__check">
+                            <div class="extract__type__container__form__label__wrapper">
+                                <h4 class="extract__type__container__form__label__header page__header4">Срочная выписка о переходе прав</h4>
+                                <p class="extract__type__container__form__label__desc page__desc2">История собственников (если есть) по сделкам, совершенным с 1998 года</p>
+                            </div>
                         </div>
-                        <div class="extract__type__container__form__label__wrapper">
-                            <h4 class="extract__type__container__form__label__cost page__header4">990 руб</h4>
-                            <p class="extract__type__container__form__label__time">5-45 минут</p>
+                        
+                        <div class="type__form__wrapper">
+                            <div class="extract__type__container__form__label__wrapper item__cost">
+                                <h4 class="extract__type__container__form__label__cost page__header4">990 руб</h4>
+                                <p class="extract__type__container__form__label__time">5-45 минут</p>
+                            </div>
+                            <a href="#" class="extract__type__container__form__label__example">Образец</a>
                         </div>
-                        <a href="#" class="extract__type__container__form__label__example">Образец</a>
                     </label>
+
                     <label  class="extract__type__container__form__label">
-                        <input type="checkbox" class="extract__type__container__form__label__check">
-                        <div class="extract__type__container__form__label__wrapper">
-                            <h4 class="extract__type__container__form__label__header page__header4">Срочная выписка об объекте</h4>
-                            <p class="extract__type__container__form__label__desc page__desc2">ФИО собственников помещения (если есть), кадастровая стоимость, наличие/отсутствие обременений/аренды/ипотеки</p>
+                        <div class="temp">
+                            <input type="checkbox" class="extract__type__container__form__label__check">
+                            <div class="extract__type__container__form__label__wrapper">
+                                <h4 class="extract__type__container__form__label__header page__header4">Выписка из ЕГРН об объекте</h4>
+                                <p class="extract__type__container__form__label__desc page__desc2">ФИО собственниковпомещения (если есть), кадастровая стоимость, наличие/отсутствие обременений/аренды/ипотеки</p>
+                            </div>
                         </div>
-                        <div class="extract__type__container__form__label__wrapper">
-                            <h4 class="extract__type__container__form__label__cost page__header4">990 руб</h4>
-                            <p class="extract__type__container__form__label__time">5-45 минут</p>
+                        
+                        <div class="type__form__wrapper">
+                            <div class="extract__type__container__form__label__wrapper item__cost">
+                                <h4 class="extract__type__container__form__label__cost page__header4">590 руб</h4>
+                                <p class="extract__type__container__form__label__time">2-34 часа</p>
+                            </div>
+                            <a href="#" class="extract__type__container__form__label__example">Образец</a>
                         </div>
-                        <a href="#" class="extract__type__container__form__label__example">Образец</a>
                     </label>
+
                     <label  class="extract__type__container__form__label">
-                        <input type="checkbox" class="extract__type__container__form__label__check">
-                        <div class="extract__type__container__form__label__wrapper">
-                            <h4 class="extract__type__container__form__label__header page__header4">Срочная выписка об объекте</h4>
-                            <p class="extract__type__container__form__label__desc page__desc2">ФИО собственников помещения (если есть), кадастровая стоимость, наличие/отсутствие обременений/аренды/ипотеки</p>
+                        <div class="temp">
+                            <input type="checkbox" class="extract__type__container__form__label__check">
+                            <div class="extract__type__container__form__label__wrapper">
+                                <h4 class="extract__type__container__form__label__header page__header4">Выписка из ЕГРН о переходе прав</h4>
+                                <p class="extract__type__container__form__label__desc page__desc2">История собственников (если есть) по сделкам, совершенным с 1998 года</p>
+                            </div>
                         </div>
-                        <div class="extract__type__container__form__label__wrapper">
-                            <h4 class="extract__type__container__form__label__cost page__header4">990 руб</h4>
-                            <p class="extract__type__container__form__label__time">5-45 минут</p>
+                        
+                        <div class="type__form__wrapper">
+                            <div class="extract__type__container__form__label__wrapper item__cost">
+                                <h4 class="extract__type__container__form__label__cost page__header4">590 руб</h4>
+                                <p class="extract__type__container__form__label__time">1-3 дня</p>
+                            </div>
+                            <a href="#" class="extract__type__container__form__label__example">Образец</a>
                         </div>
-                        <a href="#" class="extract__type__container__form__label__example">Образец</a>
                     </label>
+
                     <label  class="extract__type__container__form__label">
-                        <input type="checkbox" class="extract__type__container__form__label__check">
-                        <div class="extract__type__container__form__label__wrapper">
-                            <h4 class="extract__type__container__form__label__header page__header4">Срочная выписка об объекте</h4>
-                            <p class="extract__type__container__form__label__desc page__desc2">ФИО собственников помещения (если есть), кадастровая стоимость, наличие/отсутствие обременений/аренды/ипотеки</p>
+                        <div class="temp">
+                            <input type="checkbox" class="extract__type__container__form__label__check">
+                            <div class="extract__type__container__form__label__wrapper">
+                                <h4 class="extract__type__container__form__label__header page__header4">Справка о кадастровой стоимости</h4>
+                                <p class="extract__type__container__form__label__desc page__desc2">Информация о кадастровой стоимости. Можно заказать на любую дату в прошлом</p>
+                            </div>
                         </div>
-                        <div class="extract__type__container__form__label__wrapper">
-                            <h4 class="extract__type__container__form__label__cost page__header4">990 руб</h4>
-                            <p class="extract__type__container__form__label__time">5-45 минут</p>
+                        
+                        <div class="type__form__wrapper">
+                            <div class="extract__type__container__form__label__wrapper item__cost">
+                                <h4 class="extract__type__container__form__label__cost page__header4">219 руб</h4>
+                                <p class="extract__type__container__form__label__time">1 год</p>
+                            </div>
+                            <a href="#" class="extract__type__container__form__label__example">Образец</a>
                         </div>
-                        <a href="#" class="extract__type__container__form__label__example">Образец</a>
                     </label>
+
                     <label  class="extract__type__container__form__label">
-                        <input type="checkbox" class="extract__type__container__form__label__check">
-                        <div class="extract__type__container__form__label__wrapper">
-                            <h4 class="extract__type__container__form__label__header page__header4">Срочная выписка об объекте</h4>
-                            <p class="extract__type__container__form__label__desc page__desc2">ФИО собственников помещения (если есть), кадастровая стоимость, наличие/отсутствие обременений/аренды/ипотеки</p>
+                        <div class="temp">
+                            <input type="checkbox" class="extract__type__container__form__label__check">
+                            <div class="extract__type__container__form__label__wrapper">
+                                <h4 class="extract__type__container__form__label__header page__header4">Подписка на изменения</h4>
+                                <p class="extract__type__container__form__label__desc page__desc2">Вам придет письмо, если права или характеристики объекта изменятся</p>
+                            </div>
                         </div>
-                        <div class="extract__type__container__form__label__wrapper">
-                            <h4 class="extract__type__container__form__label__cost page__header4">990 руб</h4>
-                            <p class="extract__type__container__form__label__time">5-45 минут</p>
+                        
+                        <div class="type__form__wrapper">
+                            <div class="extract__type__container__form__label__wrapper item__cost">
+                                <h4 class="extract__type__container__form__label__cost page__header4">990 руб</h4>
+                                <p class="extract__type__container__form__label__time"></p>
+                            </div>
+                            <a href="#" class="extract__type__container__form__label__example"></a>
                         </div>
-                        <a href="#" class="extract__type__container__form__label__example">Образец</a>
                     </label>
-                    <label  class="extract__type__container__form__label not-bordered">
-                        <input type="checkbox" class="extract__type__container__form__label__check">
-                        <div class="extract__type__container__form__label__wrapper">
-                            <h4 class="extract__type__container__form__label__header page__header4">Срочная выписка об объекте</h4>
-                            <p class="extract__type__container__form__label__desc page__desc2">ФИО собственников помещения (если есть), кадастровая стоимость, наличие/отсутствие обременений/аренды/ипотеки</p>
+
+                    <label  class="extract__type__container__form__label">
+                        <div class="temp">
+                            <input type="checkbox" class="extract__type__container__form__label__check">
+                            <div class="extract__type__container__form__label__wrapper">
+                                <h4 class="extract__type__container__form__label__header page__header4">Кадастровая консультация</h4>
+                                <p class="extract__type__container__form__label__desc page__desc2">В рабочее время вам позвонит кадастровый инженер для консультации</p>
+                            </div>
                         </div>
-                        <div class="extract__type__container__form__label__wrapper">
-                            <h4 class="extract__type__container__form__label__cost page__header4">990 руб</h4>
-                            <p class="extract__type__container__form__label__time">5-45 минут</p>
+                        
+                        <div class="type__form__wrapper">
+                            <div class="extract__type__container__form__label__wrapper item__cost">
+                                <h4 class="extract__type__container__form__label__cost page__header4">590 руб</h4>
+                                <p class="extract__type__container__form__label__time"></p>
+                            </div>
+                            <a href="#" class="extract__type__container__form__label__example"></a>
                         </div>
-                        <a href="#" class="extract__type__container__form__label__example">Образец</a>
                     </label>
 
                     <input type="submit" class="extract__type__container__form__submit search__wrapper__btn header__wrapper__btn" value="Заказать документы">

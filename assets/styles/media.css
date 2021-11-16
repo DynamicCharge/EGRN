@@ -102,7 +102,7 @@
     }
     .extract__type__container__form__label {
         flex-wrap: wrap;
-        width: auto;
+        width: 95%;
     }
     .extract__req__container__form {
         flex-direction: column;
@@ -157,6 +157,29 @@
     .district .container {
         padding: 80px 0 30px;
     }
+    .temp {
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+        position: relative;
+    }
+    .extract__type__container__form__label__check {
+        position: absolute;
+        left: -25px;
+        top: 0;
+    }
+    .item__cost {
+        margin-top: 30px;
+    }
+    .type__form__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        width: 100%;
+    }
+    .extract__type__container__form__label__example {
+        margin-right: 15px;
+    }
 }
 
 @media(max-width: 620px) {
@@ -199,6 +222,29 @@
     .account-page__order__desc:first-child {
         margin-right: 40px;
     }
+    .account-page__data__container {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .account-page__data__desc {
+        margin-bottom: 10px;
+    }
+    .account-page__data__line {
+        margin-bottom: 10px;
+    }
+    .last__line {
+        margin-bottom: 20px;
+    }
+    .downloads {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .account-page__order__container__link {
+        margin-right: 0;
+    }
+    
 }
 @media(max-width: 510px) {
     .price__list__item {
@@ -209,5 +255,8 @@
     }
     .region__wrapper__list {
         width: 100%;
+    }
+    .extract__data__container__main-item__desc {
+        font-size: 12px;
     }
 }
